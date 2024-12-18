@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MariaJose_Armas_prueba_02</string>
+    <string name="enter_number1">Nombres:</string>
+    <string name="enter_number2">Apellidos:</string>
+    <string name="enter_dividiendo">Dividiendo:</string>
+    <string name="enter_Divisor">Divisor:</string>
+    <string name="enter_parteentera"> Parte Entera:</string>
+    <string name="enter_residuo">Residuo: </string>
+    <string name="enter_invertido">Num. Invertido: </string>
+
+    <string name="siguiente">Siguiente</string>
+    <string name="subtract">Mostrar resultado</string>
+
 </resources>

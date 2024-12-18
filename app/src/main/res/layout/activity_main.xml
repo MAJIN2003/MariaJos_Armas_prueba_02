@@ -1,79 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top">
 
 
     <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="320dp"
-        android:layout_height="42dp"
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_number1"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:hint="Nombres"
+        android:padding="8dp" />
+
+    <!-- Segundo Número -->
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_number2"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_dividiendo"
         android:inputType="number"
-        android:padding="8dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="51dp" />
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp" />
 
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_Divisor"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dividiendo"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="165dp" />
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_parteentera"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Divisor"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="207dp" />
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_residuo"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Parte Entera"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="295dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Residuo"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="331dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Num. Invertido"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="395dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Siguiente"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="471dp" />
+    <EditText
+        android:id="@+id/editTextNumber7"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_invertido"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mostrar resultados"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="540dp" />
+        android:text="@string/siguiente"
+        android:layout_marginBottom="16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtract"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
